@@ -19,10 +19,10 @@ export default class Dashboard extends Component {
 	}
 
 	shouldComponentUpdate(nextProps, nextState) {
-		chrome.runtime.sendMessage(JSON.stringify({
-			text: String(nextState['Review Required']),
-			color: 'red'
-		}))
+		// chrome.runtime.sendMessage(JSON.stringify({
+		// 	text: String(nextState['Review Required']),
+		// 	color: 'red'
+		// }))
 
 		return true;
 	}
@@ -59,10 +59,10 @@ export default class Dashboard extends Component {
 
 			localStorage.removeItem('pr-extension')
 
-			chrome.runtime.sendMessage(JSON.stringify({
-				text: '',
-				color: 'red'
-			}))
+			// chrome.runtime.sendMessage(JSON.stringify({
+			// 	text: '',
+			// 	color: 'red'
+			// }))
 		}
 	}
 
@@ -98,7 +98,7 @@ export default class Dashboard extends Component {
 								name="Components"
 								shortname="btp"
 								gh={this.props.gh}
-								repo="next-io-components "
+								repo="next-io-components"
 								parentState={this.state}
 								labels={this.labels}
 								handlerState={this.handlerState}

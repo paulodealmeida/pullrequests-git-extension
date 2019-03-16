@@ -30,7 +30,7 @@ export default class Panel extends Component {
 
 			/* Loop PR's */
 			res.data.map((el) => {
-				let currentLabel = el.labels[0].name.replace(' ', '-'); /* Get label name */
+				let currentLabel = el.labels[0].name.replace(' ', '-').toLowerCase(); /* Get label name */
 
 				/* Update state incrementing currentLabel attribute */
 				this.setState({
