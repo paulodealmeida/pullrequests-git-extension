@@ -8,7 +8,7 @@
 		"build": "NODE_ENV=production gulp",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
-	"repository": "git+https://github.com/matheusggds/pullrequests-git-extension.git",
+	"repository": "git+https://github.com/paulodealmeida/pullrequests-git-extension.git",
 	"keywords": [
 		"chorme",
 		"extension",
@@ -17,12 +17,12 @@
 		"requests",
 		"labels"
 	],
-	"author": "Matheus Gomide",
+	"author": "Paulo de Almeida",
 	"license": "GPL-3.0",
 	"bugs": {
-		"url": "https://github.com/matheusggds/pullrequests-git-extension/issues"
+		"url": "https://github.com/paulodealmeida/pullrequests-git-extension/issues"
 	},
-	"homepage": "https://github.com/matheusggds/pullrequests-git-extension#readme",
+	"homepage": "https://github.com/paulodealmeida/pullrequests-git-extension#readme",
 	"devDependencies": {
 		"@babel/core": "^7.2.2",
 		"@babel/plugin-proposal-class-properties": "^7.2.3",

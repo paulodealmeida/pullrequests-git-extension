@@ -7,7 +7,7 @@ export default class Dashboard extends Component {
 		toggleUpdate: 0
 	}
 
-	labels = ['waiting-merge', 'waiting-adjust', 'review-required']
+	labels = ['Approved', 'Adjustments Required', 'Review Required']
 
 	constructor(props) {
 		super(props);
@@ -20,7 +20,7 @@ export default class Dashboard extends Component {
 
 	shouldComponentUpdate(nextProps, nextState) {
 		chrome.runtime.sendMessage(JSON.stringify({
-			text: String(nextState['review-required']),
+			text: String(nextState['Review Required']),
 			color: 'red'
 		}))
 
@@ -95,10 +95,10 @@ export default class Dashboard extends Component {
 					<div className="row">
 						<div className="col-6">
 							<Panel
-								name="Brastemp"
+								name="Components"
 								shortname="btp"
 								gh={this.props.gh}
-								repo="brastemp-vtex"
+								repo="next-io-components "
 								parentState={this.state}
 								labels={this.labels}
 								handlerState={this.handlerState}
@@ -107,10 +107,10 @@ export default class Dashboard extends Component {
 						</div>
 						<div className="col-6">
 							<Panel
-								name="Consul"
+								name="Atendimento"
 								shortname="cns"
 								gh={this.props.gh}
-								repo="consul-vtex"
+								repo="next-io-atendimento"
 								parentState={this.state}
 								labels={this.labels}
 								handlerState={this.handlerState}
@@ -121,10 +121,10 @@ export default class Dashboard extends Component {
 					<div className="row">
 						<div className="col-6">
 							<Panel
-								name="Direto na Loja"
+								name="Minha Conta"
 								shortname="dnl"
 								gh={this.props.gh}
-								repo="diretonaloja-vtex"
+								repo="next-io-account"
 								parentState={this.state}
 								labels={this.labels}
 								handlerState={this.handlerState}
@@ -133,10 +133,10 @@ export default class Dashboard extends Component {
 						</div>
 						<div className="col-6">
 							<Panel
-								name="Compra Certa"
+								name="Loja"
 								shortname="cc"
 								gh={this.props.gh}
-								repo="compra-certa-3-vtex"
+								repo="next-io-store"
 								parentState={this.state}
 								labels={this.labels}
 								handlerState={this.handlerState}

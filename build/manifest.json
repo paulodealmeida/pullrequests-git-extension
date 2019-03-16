@@ -3,7 +3,7 @@
 	"name": "Jussi PR Manager",
 	"version": "1.0.0",
 	"description": "Extension to easily view Jussi Plataformas Pull Requests Labels",
-	"author": "Matheus Gomide",
+	"author": "Paulo de Almeida",
 	"icons": {
 		"16":   "icons/icon-16.png",
 		"48":   "icons/icon-48.png",
