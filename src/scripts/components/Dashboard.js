@@ -7,7 +7,7 @@ export default class Dashboard extends Component {
 		toggleUpdate: 0
 	}
 
-	labels = ['Approved', 'Adjustments Required', 'Review Required']
+	labels = ['Approved', 'Adjustments Required', 'Review Required', 'Question']
 
 	constructor(props) {
 		super(props);
@@ -87,8 +87,12 @@ export default class Dashboard extends Component {
 						<span className="label-description__desc">Waiting Adjust</span>
 					</li>
 					<li className="label-description__item">
+						<span className="label-description__color label-description__color--question"></span>
+						<span className="label-description__desc">Question</span>
+					</li>
+					<li className="label-description__item">
 						<span className="label-description__color label-description__color--approved"></span>
-						<span className="label-description__desc">Waiting Merge</span>
+						<span className="label-description__desc">Approved</span>
 					</li>
 				</ul>
 				<section className="dashboard__panels">

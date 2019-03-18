@@ -31,19 +31,23 @@
 		width: 10px;
 
 		&--reviewaquired {
-			background-color: #d93f0b;
+			background-color: $review-aquired;
 		}
 
 		&--waitingmerge {
 			background-color: #7057ff;
 		}
 
+		&--question {
+			background-color: $question;
+		}
+
 		&--waitingadjust {
-			background-color: #fbca04;
+			background-color: $waitingadjust;
 		}
 
 		&--approved {
-			background-color: #0e8a16;
+			background-color: $approved;
 		}
 	}
 

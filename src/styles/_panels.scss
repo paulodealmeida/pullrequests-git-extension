@@ -52,6 +52,7 @@
 		&--waitingadjust { &::before {background-color: $waitingadjust} }
 		&--approved { &::before {background-color: $approved} }
 		&--waitingmerge { &::before {background-color: $waitingmerge} }
+		&--question { &::before {background-color: $question} }
 	}
 
 	&--btp {

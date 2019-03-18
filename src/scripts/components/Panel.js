@@ -66,10 +66,13 @@ export default class Panel extends Component {
 						{this.state['review-required'] ? this.state['review-required'] : '-'}
 					</li>
 					<li className="repo-panel__status-item repo-panel__status-item--waitingadjust">
-						{this.state['waiting-adjust'] ? this.state['waiting-adjust'] : '-'}
+						{this.state['adjustments-required'] ? this.state['adjustments-required'] : '-'}
+					</li>
+					<li className="repo-panel__status-item repo-panel__status-item--question">
+						{this.state['question'] ? this.state['question'] : '-'}
 					</li>
 					<li className="repo-panel__status-item repo-panel__status-item--approved">
-						{this.state['waiting-merge'] ? this.state['waiting-merge'] : '-'}
+						{this.state['approved'] ? this.state['approved'] : '-'}
 					</li>
 				</ul>
 			)
